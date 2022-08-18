@@ -78,7 +78,7 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
   deploy-development-environment:
-    if: ${{ github.ref == 'refs/heads/trunk' }}
+    if: github.ref == 'refs/heads/trunk'
     needs: [build-and-push-backend-image, build-and-push-frontend-image]
     runs-on: [self-hosted, development]
     steps:
