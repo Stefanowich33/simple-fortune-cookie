@@ -1,10 +1,10 @@
 name: deployment
-on:
-  push:
-    branches:
-      - "trunk"
-    tags:
-      - "v*"
+on: workflow_dispatch
+  # push:
+  #   branches:
+  #     - "trunk"
+  #   tags:
+  #     - "v*"
 jobs:
   build-and-push-frontend-image:
     runs-on: ubuntu-latest
