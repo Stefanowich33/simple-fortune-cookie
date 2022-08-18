@@ -1,11 +1,11 @@
 FROM golang:1.19-alpine
 
+EXPOSE 8080
+
 WORKDIR /app
 
 COPY go.mod ./
 RUN go mod verify
-
-EXPOSE 8080
 
 COPY . .
 

@@ -9,5 +9,4 @@ COPY . .
 
 RUN go build -v -o /usr/local/bin .
 
-
 ENTRYPOINT ["backend"]
