@@ -91,7 +91,7 @@ jobs:
           method: kubeconfig
       - uses: Azure/k8s-deploy@v4
         with:
-          namespace: 'student-smth'
+          namespace: 'student58'
           manifests: manifests/cookie-app
           images: 'ghcr.io/stefanowich33/simple-fortune-cookie/cookie-frontend:trunk'
       - run: chmod +x ci/health-check.sh
@@ -107,7 +107,7 @@ jobs:
           method: kubeconfig
       - uses: Azure/k8s-deploy@v4
         with:
-          namespace: 'student-smth'
+          namespace: 'student41'
           manifests: manifests/cookie-app
           images: 'ghcr.io/stefanowich33/simple-fortune-cookie/cookie-frontend:trunk'
       - run: chmod +x ci/health-check.sh
@@ -123,7 +123,7 @@ jobs:
           method: kubeconfig
       - uses: Azure/k8s-deploy@v4
         with:
-          namespace: 'student-smth'
+          namespace: 'student42'
           manifests: manifests/cookie-app
           images: 'ghcr.io/stefanowich33/simple-fortune-cookie/cookie-frontend:trunk'
       - run: chmod +x ci/health-check.sh
